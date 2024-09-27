@@ -79,7 +79,7 @@ def posicio_senars(llista):
     return posicionsparells
 
 
-def cantidaddigits(llista):
+def cantidad_digits(llista):
     # 10. recibe como parametro una lista de numeros,
     #  retorna otra lista indicando cuantos digitos tiene cada elemento
     resultat = llista[:]

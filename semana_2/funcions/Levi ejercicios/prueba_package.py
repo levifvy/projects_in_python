@@ -1,7 +1,7 @@
 import archivo_ayuda
 
-llista = [50,200,300,45]
+llista_de_prueba = ["las", "clases","de","python","son","geniales"]
 
-sumatorio = archivo_ayuda.suma(llista)
+resultat = archivo_ayuda.inversio(llista_de_prueba)
 
-print(sumatorio)
+print(resultat)
