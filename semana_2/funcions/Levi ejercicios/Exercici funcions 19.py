@@ -1,4 +1,4 @@
-def remoult(llista):
+'''def remoult(llista):
 
     resultat = llista[:]
     posicio = 0
@@ -13,4 +13,16 @@ def remoult(llista):
 
 llista = ['hola','com', 'estàs']
 
-print(remoult(llista))
+print(remoult(llista))'''
+#----------------------
+def nofirst(l):
+    resultat = []
+    for element in l:
+        resultat.append(element[1:len(element)])
+    return resultat
+
+original = ['hola','com', 'estàs', 'pink floyd']
+
+resultado = nofirst(original)
+#print(f"La lista original es {original} i la modificada es {resultado}")
+print(resultado)

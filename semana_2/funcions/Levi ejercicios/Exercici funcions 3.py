@@ -1,3 +1,5 @@
+'''3. Funció que pren com a paràmetre una llista de números i retorna la suma dels quadrats
+dels seus elements.'''
 def suma(llista):
 
     resultat = llista[:]

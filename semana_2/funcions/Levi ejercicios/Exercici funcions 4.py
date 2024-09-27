@@ -1,3 +1,6 @@
+'''4. Funció que pren com a paràmetre una llista de números i retorna la suma dels cubs
+dels seus elements.'''
+
 def sumacubos(llista):
 
     resultat = llista[:]

@@ -1,11 +1,14 @@
-def ordenacio(llista):
+'''14. Funció que pren com a paràmetre una llista de cadenes i retorna una única cadena amb
+tots els elements concatenats (Suma d'strings o cadenes).'''
 
-    cadenes = "".join(llista)
-    return cadenes
+# def ordenacio(llista):
 
-llista = ['hola','com','estàs']
+#     cadenes = "".join(llista)
+#     return cadenes
 
-print(ordenacio(llista))
+# llista = ['hola','com','estàs']
+
+# print(ordenacio(llista))
 
 #-------------
 def ordenacio(llista):
