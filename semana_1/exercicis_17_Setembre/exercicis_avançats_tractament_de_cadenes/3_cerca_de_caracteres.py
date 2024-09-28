@@ -1,9 +1,8 @@
-'''
-3. Cerca de caràcters (count, index, find):
-Escriu un programa que demani una cadena i un caràcter. El programa ha de mostrar 
-quantes vegades apareix el caràcter en la cadena, la seva primera aparició i la seva última 
-aparició. 
+''' 3. Cerca de caràcters (count, index, find):
+Escriu un programa que demani una cadena i un caràcter. El programa ha de mostrar quantes vegades apareix el caràcter en la cadena, la seva primera aparició i la seva última aparició. 
+
 Entrada:'supercalifragilistico', 'i' 
+
 Sortida esperada: 
 El caràcter 'i' apareix 3 vegades. 
 La seva primera aparició és a la posició 7. 

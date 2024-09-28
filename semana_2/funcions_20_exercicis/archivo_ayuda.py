@@ -116,17 +116,17 @@ def convertir_majuscules(llista):
     return(longituds)
 
 def concatenacio_caracteres(llista):
-    # 14. recibe una lista y retorna otra lista 
-    # con todos los caracteres concatenados
+    # 14. recibe una lista y retorna una unica cadena 
+    # - con todos los caracteres concatenados
     resultado = ""
     for cadena in llista:
         resultado += cadena
     return resultado
 
-def ordenacio_cadenas_alfabeticamente(llistacadenas):
+def ordenacio_cadenas_alfabeticamente(llista_cadenes):
     # 15. recibe una lista de cadenas 
     # y retorna otra lista con las cadenas ordenadas alfabeticamente
-    replica = llistacadenas[:]
+    replica = llista_cadenes[:]
     replica.sort()
     return replica
 
@@ -147,35 +147,35 @@ def cadenes_posicio_senars(llista):
         resultat.append(llista[posicio])
     return resultat
 
-def no_last_caracter(l):
+def no_last_caracter(llista_cadenes):
     # 18. recibe una lista de cadenas
     #- y deveulve otra lista de las mismas cedenas sin el ultimo caracter
     resultat = []
-    for element in l:
+    for element in llista_cadenes:
         resultat.append(element[0:len(element)-1])
     return resultat
 
-def no_first_caracter(l):
+def no_first_caracter(llista_cadenes):
     # 19. recibe una lista de cadenas
     #- y deveulve otra lista de cedenas sin el primer caracter
     resultat = []
-    for element in l:
+    for element in llista_cadenes:
         resultat.append(element[1:len(element)])
     return resultat
 
-def inversion_cadena(c):
-    # 20.1 recibe una cadena 
-    # y devuelve otra acdena con sus caracteres invertisos
+def inversion_cadena(cadena):
+    # 20.1 recibe una cadena por parametro
+    # y devuelve otra cadena con sus caracteres invertidos
     resultat = ''
-    for char in c:
+    for char in cadena:
         resultat = char + resultat
     return resultat
 
-def inversio(l):
+def inversio(llista_cadenes):
     # 20.2 recibe una lista de cadenas
     #- y en cada posicion invierte el orden de los
     #- caracteres de cada cadena con la funcion inversion_cadena
     invertida = []
-    for element in l:
+    for element in llista_cadenes:
         invertida.append(inversion_cadena(element))
     return invertida
