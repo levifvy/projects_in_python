@@ -29,7 +29,6 @@ Hola, món!
 entrada = input('Ingresa una frase y un número, separados por una coma: ')
 
 lista = entrada.split(',')
-
 cadena_repetida = lista[0] + "\n"
 repeticiones = int(lista[1])
 print(cadena_repetida * repeticiones)

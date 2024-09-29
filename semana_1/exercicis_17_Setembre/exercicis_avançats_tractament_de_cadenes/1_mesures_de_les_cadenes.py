@@ -23,7 +23,6 @@ mes_petit = entrada[0]
 contador = 0
 
 for i in entrada:
-    print(f"{i} es {ord(i)}")
     if ord(i) > ord(mes_grand):
         mes_grand = i
     if ord(i) < ord(mes_petit):

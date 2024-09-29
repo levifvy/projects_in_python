@@ -8,12 +8,11 @@ El caràcter 'i' apareix 3 vegades.
 La seva primera aparició és a la posició 7. 
 La seva última aparició és a la posició 17. 
 '''
-cadena = input("Ingresa una cadena: ")
-caracter = input("Ahora ingresa un caracter: ")
-print("")
+entrada = input("Ingresa una cadena y un caracter separados por una coma: ")
+extraccion = entrada.split(',')
 
-concatenado = ''.join([cadena,", ",caracter])
-print("Entrada: ", concatenado)
+cadena = extraccion[0]
+caracter = extraccion[1]
 print("")
 
 conteo = cadena.count(caracter)
