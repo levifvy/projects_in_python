@@ -1,0 +1,15 @@
+wsl --install -d Debian   → instalador de linux en windows
+
+ winget search powershell → (opcional) se utiliza para buscar paquetes relacionados con "powershell" en el repositorio de aplicaciones que maneja winget, el administrador
+                             de paquetes de Windows.
+winget install 9MZ1SNWT0N5D → (opcional, solo si la anterior fue necesario) instalando la version de powershell
+
+sudo su   → permisos de superususario
+
+apt install python3 → instala el python3 y las depèndencias de linux
+
+apt install python3-pip
+
+pip install pyinstaller → instalador de dependencias de python
+
+pyinstaller --version → comprobar si ya tenemos el pyinstaller
