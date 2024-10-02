@@ -10,19 +10,22 @@ llistedecadenes = arxiu.readlines()
 matriz = []
 sublongituds = []
 longituds = []
+subcadena = ''
 
 for cadena in llistedecadenes:
     matriz.append(patro.findall(cadena))
     #if len(patro.findall(cadena)) != 20:
     #longituds.append(patro.findall(cadena))
     for element in cadena:
-        element.split(',')
+        subcadena = element.replace(' ','')
+        print(subcadena, end='')
+        #element.split(',')
     #sublongituds.append()
-        print(element.split(','),end='')
+        #print(element.split(','),end='')
 
         
 
-#print(type(element))
+print(type(subcadena))
 
 # print(type(sublongituds))
 
