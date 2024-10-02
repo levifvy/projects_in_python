@@ -7,16 +7,8 @@ resultat = []
 subresultat = []
 sublista = []
 for element in llista:
-    
     element = patro.findall(element)
-    
-    frase = ""
-    print(element)
-    for paraula in element:
-        
-        frase = paraula.replace('.','').replace('\n','')
-       # print(frase)
-    sublista.append(frase)
-#print(sublista)
-#     resultat.append(sublista)
-# print(resultat)
+    sublista = [paraula.replace('.','') for paraula in element]
+    resultat.append(sublista)
+
+print(resultat)
