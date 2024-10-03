@@ -1,0 +1,60 @@
+'''
+fran exposito
+[\w\.-ñ]+|[\"\']{1}[\{]*[\[]*[\w\. -,:]+[\}]*[\]]*[\"\']{1}
+
+[\w\.-ñ\{\:\']+[\s]*|[\"]{1}[\w\. -,:\'\s\{\[\}\]]+[\"]{1}|[\"\{\[]+[\w\. -,:\']+[\"\]\}]+
+'''
+'''
+adrian ferrer torres
+https://www.kaggle.com/datasets/lainguyn123/student-performance-factors
+
+import re
+import io
+
+#patro = re.compile(r"[A-Za-z0-9-': \/\_\.!$?]+|\"[^\"]*\"")
+#arxiu = io.open(r"C:\Users\Alumne_mati1.EQUIPHECTOR\Desktop\Python\10_03 Python\New_study\StudentPerformanceFactors.csv")
+#llistacadenes = arxiu.readlines()
+llistacadenes = [cadena.replace(",,",",ND,") for cadena in arxiu.readlines()]
+matriu = []
+for cadena in llistacadenes:
+matriu.append(patro.findall(cadena))
+
+#confirmamos que los campos de todos los registros coinciden con numero de titulos.
+longituds = [len(element) for element in matriu]
+print(f"hay{set(longituds)}campos en cada registro") #20 camps
+
+hores_estudiades = []
+scores = []
+
+for llista in matriu[1:]:
+
+hores_estudiades.append(int(llista[0])) #primera columna
+scores.append(int(llista[-1])) #ultima columna
+
+
+for element in hores_estudiades:
+#SANDWICH
+if 0 <= hores_estudiades < 10:
+    pass
+elif 10 <= hores_estudiades <20:
+    pass
+elif 20 <= hores_estudiades <30:
+    pass
+
+else:   
+    pass
+
+print(f"Este es el minimo de horas estudiadas {min(hores_estudiades)}")
+print(f"Este es el maximo de horas estudiadas {max(hores_estudiades)}")
+
+
+# 0-10 h ---poc estudi
+# 10-20 h --mitja
+# 20-30h ---bon
+# 30+ ------overload
+
+joan masdemont fontàs
+https://py3.codeskulptor.org/#user309_v4KByAyU9L_0.py
+
+fran exposito
+https://www.kaggle.com/datasets/mohammedalsubaie/movies

@@ -1,0 +1,52 @@
+''' https://py3.codeskulptor.org/#user309_v4KByAyU9L_0.py '''
+
+import re
+import io
+
+patro = re.compile(r"[A-Za-z0-9-':\/\_\.!$?]+|\"[^\"]*\"")
+
+arxiu = io.open(r"C:\\Users\\Alumne_mati1\\Documents\\python_cifo_septiembre_2024\\semana_3\\PRIMER_ESTUDI\\StudentPerformanceFactors.csv","r",encoding = 'utf-8')
+
+#llistadecadenes = arxiu.readlines()
+
+llistadecadenes = [cadena.replace(",,",",ND,") for cadena in arxiu.readlines()]
+
+matriu = []
+
+for cadena in llistadecadenes:
+    matriu.append(patro.findall(cadena))
+
+implicacio_ascendentes = []
+score = []
+
+scorebaix  = 0
+indexbaix = 0
+scoremig  = 0
+indexmig = 0
+scorealt  = 0
+indexalt = 0
+
+for llista in matriu[1:]:
+    implicacio_ascendentes.append(llista[2])
+    score.append(int(llista[-1]))
+
+for pos in range(len(implicacio_ascendentes)):
+
+    if implicacio_ascendentes[pos] == "High":
+        scorealt += score[pos]
+        indexalt += 1
+    
+    elif implicacio_ascendentes[pos] == "Medium":
+        scoremig += score[pos]
+        indexmig += 1
+
+    else:
+        scorebaix += score[pos]
+        indexbaix += 1
+print(scorebaix/indexbaix,scoremig/indexmig,scorealt/indexalt)
+
+
+    
+
+
+
