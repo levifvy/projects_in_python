@@ -3,7 +3,7 @@ import re
 
 patro = re.compile("[A-Za-z0-9 \\-_]+")
 
-arxiu = io.open("C:\\Users\\Alumne_mati1\\Downloads\\work.csv","r",encoding='utf-8')
+arxiu = io.open("C:\\Users\\Usuario\\Downloads\\user_behavior_dataset.csv","r",encoding='utf-8')
 
 llistedecadenes = arxiu.readlines()
 
@@ -16,4 +16,4 @@ for cadena in llistedecadenes:
         longituds.append(patro.findall(cadena))
 
 
-print(matriz[1])
+print(matriz)
