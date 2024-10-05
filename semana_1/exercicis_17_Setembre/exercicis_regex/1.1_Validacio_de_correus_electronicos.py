@@ -1,26 +1,25 @@
-# regex101.com
-'''
-Exercici 1: Validació de correus electrònics
-Objectiu: Escriu una expressió regular per validar correus electrònics simples.
-Entrada: hola@test.com, josep.puigdemont@company.cat, marta123@xyz.org, persona@.
-'''
-
-
-
-# (?<=^|\s|,)[a-z0-9]+\.?[a-z0-9]+@[a-z0-9]+\.[a-z0-9]+(?=$|\s|,|.)
-
-# Exercici 1: Validació de correus electrònics
+# '''Exercici 1: Validació de correus electrònics
 # Objectiu: Escriu una expressió regular per validar correus electrònics simples.
 # Entrada: hola@test.com, josep.puigdemont@company.cat, marta123@xyz.org, persona@.
-
+# '''
 # (?<=^|\s) ... (?=$|\s)
+# regex101.com
 
-# josep.puigdemont@company.cat
+import re
 
-# genaro.12321@hlkj.cat
+#patro = re.compile(r"(?<=^|\s|,)[a-z0-9]+\.?[a-z0-9]+@[a-z0-9]+\.[a-z0-9]+(?=$|\s|,|.)")
 
-# vadsfga1313.asfg@gmail.com
+patro = re.compile(r"(?:^|\s|,)[a-z0-9]+\.?[a-z0-9]+@[a-z0-9]+\.[a-z]{2,}(?=$|\s|,|\.)")
 
-# vadsfgaAD1313.asfg@gmail.com
+entrada = input("Ingrese un texto: ")
 
-# genaro12321@hlkj.cat
+resultado = patro.findall(entrada)
+resultado = [correo.strip(", ") for correo in resultado]
+
+for cadena in resultado:   
+    print(cadena)
+
+
+
+
+
