@@ -10,7 +10,7 @@ patro = re.compile(r"(?:^|\s|,)\(93\)[0-9]{5,}(?=$|\s|,|\.)")
 entrada = input("Ingrese un texto con numeros telefonicos: ")
 
 resultado = patro.findall(entrada)
-resultado = [telefono.strip(", ") for telefono in resultado]
+resultado = [telefono.strip(" ") for telefono in resultado]
 
-for telefono in resultado:
-    print(telefono)
+for elemento in resultado:
+    print(elemento)
