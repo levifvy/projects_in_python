@@ -1,4 +1,4 @@
-'''Calcular la mitjana dels números positius llegits'''
+'''8. Calcular la mitjana dels números positius llegits'''
 acumulador = 0
 contador = 0
 while True:    

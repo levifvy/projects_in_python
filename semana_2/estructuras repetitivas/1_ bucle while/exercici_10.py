@@ -1,4 +1,4 @@
-'''Multiplicar dos sencers positius en base a sumes successives'''
+'''10. Multiplicar dos sencers positius en base a sumes successives'''
 n= int(input("Multiplicando: "))
 m = int(input("Multiplicador: "))
 acumulador = 0

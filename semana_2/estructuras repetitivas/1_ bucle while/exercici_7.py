@@ -1,4 +1,4 @@
-'''Sumar les potències de 2 menors a 100'''
+'''7. Sumar les potències de 2 menors a 100'''
 potencia = 0
 numero = 0
 acumulador = 0

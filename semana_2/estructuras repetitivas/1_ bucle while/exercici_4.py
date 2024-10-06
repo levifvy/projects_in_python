@@ -1,4 +1,4 @@
-'''Escriure els n primers múltiples de m'''
+'''4. Escriure els n primers múltiples de m'''
 
 # n = int(input("Ingresa un numero: "))
 # m = int(input("Ingresa un numero de multiplos: "))

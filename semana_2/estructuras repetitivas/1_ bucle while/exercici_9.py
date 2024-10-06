@@ -1,4 +1,4 @@
-'''Dir si un número és primer o no'''
+'''9. Dir si un número és primer o no'''
 while True:
     try:
         entrada = input('Ingresa un numero o marca "y" para terminar: ')

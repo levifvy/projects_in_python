@@ -1,4 +1,4 @@
-'''Escriure tots els divisors d'un número en ordre ascendent'''
+'''11. Escriure tots els divisors d'un número en ordre ascendent'''
 
 while True:
     try:

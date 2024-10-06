@@ -1,4 +1,7 @@
-''' Entrada: 'Python és increïble' 
+''' 1. Mesures de les cadenes (len, max, min):
+Escriu un programa que demani a l'usuari diverses paraules separades per espais. El programa ha de calcular la paraula més llarga, la més curta i mostrar el caràcter amb el valor més alt i més baix ASCII dins de la cadena completa.
+
+Entrada: 'Python és increïble' 
 Sortida esperada: 
     La paraula més llarga és: increïble 
     La paraula més curta és: és 

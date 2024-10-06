@@ -1,4 +1,4 @@
-'''12.Calcular els factors primers d'un número'''
+'''12. Calcular els factors primers d'un número'''
 while True:
     try:
         entrada = input('Ingresa un numero o marca "y" para terminar: ')
