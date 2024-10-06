@@ -1,27 +1,14 @@
-'''
-Exercici 13: Extracció d'enllaços sense protocol 
+'''Exercici 13: Extracció d'enllaços sense protocol 
 Objectiu: Escriu un regex per extreure enllaços web que no incloguin el protocol (ex: www). 
-Entrada: Visita www.example.com per més informació. 
-'''
 
-# [^\/][w]{3}\.[a-z]+\.[a-z]+
+Entrada: Visita www.example.com per més informació. www.google.com.es, www.google.co.uk '''
 
+import re
 
-'''
-Python regex lookbehind and lookahead
+patro = re.compile(r"(www\.[a-zA-Z0-9\-]+\.[a-zA-Z]{2,}(?:\.[a-zA-Z]{2,})?)")
 
-(?<=^|\s)w{3}(\.[a-zA-Z0-9]+)+(?=\s|$)
-www.google.com.es
+entrada = input("Ingresa un texto que contenga enlaces: ")
 
-www.google.co.uk
+resultado = patro.findall(entrada)
 
-el caracter que hi ha abans
-(?<=.....) look behind
-(?<=\s|^)    per exemple abans del patró espai
-
-
-el caracter que hi ha despres
-(?=.....)look ahead
-(?=\s|$)   per exemple despres del patró 
-
-'''
+print("Enlaces: ", resultado)

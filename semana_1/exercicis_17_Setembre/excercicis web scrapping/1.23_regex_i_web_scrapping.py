@@ -1,3 +1,5 @@
+
+
 import requests
 from bs4 import BeautifulSoup
 import re
@@ -11,7 +13,7 @@ url "https://es.wikipedia.org/wiki/Python_(lenguaje_de_programación)"
 
 10 response requests.get(url)
 
-Comprobar que la petición fue exitosa (código 200)
+#Comprobar que la petición fue exitosa (código 200)
 
 if response.status_code == 200:
 
