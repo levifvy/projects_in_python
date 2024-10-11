@@ -1,0 +1,14 @@
+selenium simules la interacció amb els elements 
+wb buttons etcwtwra
+
+requests + BeautifulSoup
+
+Baneo si os prohiben <---- ocultar el javascript
+
+
+Interficies gràfiques
+
+a) Tkinter ús educatiu
+
+b) QT, ús professional. Escriptores de linux molts estan fets amb QT.
+
