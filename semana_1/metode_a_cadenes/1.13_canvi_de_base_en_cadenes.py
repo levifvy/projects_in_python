@@ -2,10 +2,7 @@ numero = input("Ingresa un numero en base decimal: ")
 
 numero = int(numero)
 
-print("\nNúmero decimal: ",numero,"\n\n")
-
-print("A binari: " + bin(numero) + "\n")
-
-print("A hexadecimal: " + hex(numero) + "\n")
-
-print("A binari: " + oct(numero) + "\n")
+print(f"Número decimal: {numero}")
+print(f"A binari: {bin(numero)}")
+print(f"A hexadecimal: {hex(numero)}")
+print(f"A octogonal: {oct(numero)}")
